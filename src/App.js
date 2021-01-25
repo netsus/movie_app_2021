@@ -5,14 +5,15 @@ function Food({fav}){
   return <h1>I like {fav}</h1>
 }
 
+const foodlist = ["kimchi","Dynamite","ramyun"]
+
 function App() {
   return (
   <div>
     <h1>Hello</h1>
-    <Food fav="kimchi" />
-    <Food fav="samgyupsal" />
-    <Food fav="ramyun" />
-    <Food fav="bulgogi" />
+  {foodlist.map(food=>
+    <Food fav={food}/>
+  )}
   </div>
   );
 }
