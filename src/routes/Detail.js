@@ -5,8 +5,8 @@ class Detail extends React.Component {
         console.log(this.props);
         const {location, history} = this.props;
         if (location.state === undefined) {
-            history.push("/");
-
+            
+            history.push("/"); // Redirect
         }
     }
     render(){
